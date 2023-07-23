@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
+}
+
+.navbarTitle{
+    color: rgb(183, 255, 251);
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: x-large;
+    margin-left: 10px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: rgb(0, 255, 229);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(114, 75, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.home{
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10% 10%;
+    background-color: #411f8f;
+}
+
+.g1{
+    height: 100px;
+    background: linear-gradient(to bottom, #411f8f, #271f8f)
+}
+
+.about{
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10% 10%;
+    background-color: #271f8f;
+}
+
+.about-contents{
+    height: inherit;
+}
+
+.g2{
+    height: 100px;
+    background: linear-gradient(to bottom, #271f8f, #114a80)
+}
+
+.project{
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10% 10%;
+    background-color: #114a80;
+}
+
+.g3{
+    height: 100px;
+    background: linear-gradient(to bottom, #114a80, #078574)
+}
+
+.contact{
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10% 10%;
+    background-color: #078574;
+}
