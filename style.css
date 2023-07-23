@@ -10,7 +10,7 @@
 .navbarTitle{
     color: rgb(183, 255, 251);
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .navbar a {
@@ -46,22 +46,34 @@
     background-color: #411f8f;
 }
 
+.home-contents{
+    height: 250px;
+    display: grid;
+    justify-content: space-evenly;
+}
+
 .g1{
     height: 100px;
     background: linear-gradient(to bottom, #411f8f, #271f8f)
 }
 
 .about{
-    height: 60vh;
+    height: auto;
     color: white;
-    display: flex;
+    display: grid;
     align-items: center;
-    padding: 10% 10%;
+    padding: 0% 5%;
     background-color: #271f8f;
 }
 
-.about-contents{
-    height: inherit;
+.about-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.interest-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .g2{
