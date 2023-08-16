@@ -4,6 +4,10 @@ a{
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@ a{
 .navbarTitle{
     color: rgb(183, 255, 251);
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .navbar a {
@@ -61,6 +65,11 @@ a{
     background: linear-gradient(to bottom, #411f8f, #271f8f)
 }
 
+.about {
+    margin-top: -100px; /* Adjust this value based on your header's height */
+    padding-top: 100px; /* Add padding to compensate for the negative margin */
+}
+
 .about-contents{
     height: auto;
     color: white;
@@ -86,35 +95,76 @@ a{
 }
 
 .project{
-    height: 20vh;
+    width: inherit;
+    height: 600px;
     color: white;
+    display: grid;
+    align-items: center;
+    padding: 0% 15%;
+    background-color: #114a80;
+}
+
+.projectSelect{
     display: flex;
     align-items: center;
-    padding: 10% 10%;
-    background-color: #114a80;
+    justify-content: space-around;
+}
+.projectTitle{
+    padding-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.projectBox{
+    width: 450px;
+    height: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.projectButton{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid rgb(0, 0, 0); 
+}
+.projectButton:hover{
+    background-color: rgb(147, 255, 192);
+    outline: 2px dashed rgb(0, 0, 0); 
 }
 
 .g3{
     height: 100px;
-    background: linear-gradient(to bottom, #114a80, #078574)
+    background: linear-gradient(to bottom, #114a80, #066896)
 }
 
 .contact{
-    height: 20vh;
+    height: 300px;
     width: 100%;
     color: white;
     display: flex;
     align-items: center;
-    padding: 10% 10%;
-    background-color: #078574;
+    padding: 0% 0%;
+    background-color: #066896;
 }
 
 .contact-contents{
+    height: 0px;
     width: inherit;
+    padding-top: 0px;
+    padding-bottom: 10%;
 }
 
 button {
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -134,10 +184,11 @@ button {
 }
 
 .contact-button-row{
-    padding-top: 15px;
-    padding-left: 10%;
-    padding-right: 10%;
+    background: #000;
+    padding-top: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
