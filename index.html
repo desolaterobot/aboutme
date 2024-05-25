@@ -1,169 +1,167 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Desolate Robot</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="header">
-            <p class="navbarTitle">Desolate Robot</p>
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#project">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        
-        <!--home section-->
-        <div style="height: auto; width: 100%; background-image: url('assets/binary-sun-wallpaper.png'); background-size: cover; background-position: center;">
-            <section class="home" id="home">
-                <div class="home-contents">
-                    <div>
-                        <p style="font-size: 65px; text-shadow: 3px 3px 4px #1b0d5a;">Hi, my name is Dimas Rizky</p>
-                        <p style="font-size: 30px; text-shadow: 3px 3px 4px #1b0d5a;">Sometimes known on the internet as Desolate Robot</p>
-                    </div>
-                    <p style="font-size: 30px; text-shadow: 3px 3px 4px #1b0d5a;">
-                        I'm a Computer Engineering student studying at 
-                        Nanyang Technological University in Singapore!<br>
-                        Scroll down to find out more about me.
-                    </p>
+
+<head>
+    <title>Desolate Robot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <p class="navbarTitle">Dimas Rizky</p>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section-->
+    <div class="home-bg">
+        <section class="home" id="home">
+            <div class="home-contents">
+                <div>
+                    <p class="home-title">Hi, my name is Dimas Rizky</p>
                 </div>
-            </section>
-            <div style="height: 200px; background: linear-gradient(to bottom, #ce111100, #251180)"></div>
-        </div>
-
-        <!--about section-->
-        <section class="about" id="about">
-            <div class="about-contents">
-                <h1 style="font-size: 50px;" class="about-item">About Me</h1>
-
-                <div id="education" class="about-item">
-                    <h2 style="font-size: 35px;">
-                        Education
-                    </h2>
-
-                    <p style="font-size: 24px;">
-                        Completed my O-Levels in 2017, and my A-levels 
-                        in 2019. After serving in the Singapore Police Force for
-                        2 years, I currently study in NTU for my Computer Engineering (BE) degree.
-                    </p>
-                </div>
-
-                <div id="interests" class="about-item">
-                    <h2 style="font-size: 35px;">
-                        Interests and Skills
-                    </h2>
-
-                    <p style="font-size: 28px;" class="interest-item">
-                        Fuelled by my intrigue of video games when I was a child, 
-                        I have always had an interest for programming, so naturally I'd always be motivated to learn new things about the topic.
-                        <br>
-                        Language/Framework experience: <u>Python, C#, Javascript, C, Dart, Unity, Flutter</u>
-                    </p>
-
-                    <p style="font-size: 28px;" class="interest-item">
-                        I also have experience with creative software for graphic design <u>(Inkscape)</u> and video editing <u>(Lightworks, Movie Maker)</U>.
-                        <b>Every image in this page is designed by me in Inkscape!</b>
-                    </p>
-
-                    <p style="font-size: 28px;" class="interest-item">
-                        My hobbies include cycling and dissociating myself in 
-                        movie theatres for 2-3 hours. The longer the better.
-                    </p>
-                </div>
-            </div>
-            <div style="width: 200px;"></div>
-            <div>
-                <img src="assets/eternal.png" height="750" width="750">
+                <p class="home-text">
+                    I'm a Computer Engineering student studying at
+                    Nanyang Technological University in Singapore!<br>
+                    Scroll down to find out more about me.
+                </p>
             </div>
         </section>
+        <div style="height: 200px; background: linear-gradient(to bottom, #ce111100, #251180)"></div>
+    </div>
 
-        <!--project section-->
-        <div style="height: auto; width: auto; background-image: url('assets/mosaic-wallpaper.png'); background-size: cover; background-position: center;">
-            <div style="height: 200px; background: linear-gradient(to bottom, #251180, #25118000)"></div>
-            <section class="project" id="project">
-                <div class="project-contents">
-                    <h1 style="font-size: 50px; text-align: center;">My Projects</h1>
-                    <p style="padding-top: 10px; font-size: 20px; padding-bottom: 30px; text-align: center;">During my free time, I like to challenge myself with hobby projects. Here are the ones I'm most proud of!</p>
-                    <div class="projectSelect">
-                        <div class="projectBox" id="unitygame">
-                            <div class="projectTitle">
-                                <img src="assets/eternal.png" width="100" height="100">
-                                <p style="font-size: 40px; padding-left: 15px; text-align: center;">Eternal Grid</p>
-                            </div>
-                            <p style="font-size: 21px; padding-top: 20px; height: 175px;">
-                                A 80s-aesthetic-inspired top-down endless arcade shooter game. 
-                                Made in Unity in the C# programming language, all illustrations 
-                                and artwork made by me.
-                            </p>
-                            <a href="https://desolaterobot.itch.io/eternal-grid">
-                                <button class="projectButton">
-                                    <p>Visit Site</p>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="projectBox" id="substracker">
-                            <div class="projectTitle">
-                                <div class="cropCircle">
-                                    <img src="assets/substracker.png" width="100" height="100">
-                                </div>
-                                <p style="font-size: 40px; padding-left: 15px; text-align: center;">Substracker</p>
-                            </div>
-                            <p style="font-size: 21px; padding-top: 20px; height: 175px;">
-                                An Android app that can track subscriptions and daily expenses, made in Flutter in the Dart language.
-                            </p>
-                            <a href="https://play.google.com/store/apps/details?id=com.desolate.substracker">
-                                <button class="projectButton">
-                                    <p>Download App</p>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="projectBox" id="thoth">
-                            <div class="projectTitle">
-                                <img src="assets/thoth.png" width="100" height="100">
-                                <p style="font-size: 40px; padding-left: 15px; text-align: center;">ThothCrypt</p>
-                            </div>
-                            <p style="font-size: 21px; padding-top: 20px; height: 175px;">
-                                A program that allows encryption of entire folders just by using a single password. Made in Python, used the TKinter for GUI and Fernet for encryption.
-                            </p>
-                            <a href="https://github.com/desolaterobot/thoth">
-                                <button class="projectButton">
-                                    <p>Download On GitHub</p>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div style="height: 200px; background: linear-gradient(to bottom, #25118000, #066896)"></div>
+    <!--about section-->
+    <section class="about" id="about">
+        <div class="about-contents">
+            <h1 class="about-title">About Me</h1>
+            <div id="education">
+                <h2 class="about-subtitle">
+                    Education
+                </h2>
+                <p class="about-text">
+                    Completed my O-Levels in 2017, and my A-levels
+                    in 2019. After serving in the Singapore Police Force for
+                    2 years, I currently study in NTU for my Computer Engineering (BE) degree.
+                </p>
+            </div>
+
+            <div id="interests">
+                <h2 class="about-subtitle">
+                    Interests and Skills
+                </h2>
+                <p class="about-text">
+                    Fuelled by my intrigue of video games when I was a child,
+                    I have always had an interest for programming, so naturally I'd always be motivated to learn new
+                    things about the topic.
+                    <br>
+                    Skills: <u>Python, C#, Javascript, C, Dart, Unity, Flutter</u>
+                </p>
+                <p class="about-text">
+                    I also have experience with creative software for graphic design <u>(Inkscape)</u> and video editing
+                    <u>(Lightworks, Movie Maker)</U>.
+                    <b>Every image in this page is designed by me in Inkscape!</b>
+                </p>
+                <p class="about-text">
+                    My hobbies include cycling and dissociating myself in
+                    movie theatres for 2-3 hours. The longer the better.
+                </p>
+            </div>
         </div>
+        <div style="width: 200px;"></div>
+        <div>
+            <img src="assets/eternal.png" height="750" width="750" class="icon">
+        </div>
+    </section>
 
-        <!--contact section-->
-        <section class="contact" id="contact">
-            <div class="contact-contents">
-                <h1 style="font-size: 50px; text-align:center;">Contact Me</h1>
-                <div class = "contact-button-row">
-                    <a href="mailto:dimasrizkyk@gmail.com">
-                        <button class="button1">
-                            <img src="logos/email.png" width="35" height="35">
-                            <p>Email</p>
+    <!--project section-->
+    <div class="project-bg">
+        <div style="height: 200px; background: linear-gradient(to bottom, #251180, #25118000)"></div>
+        <section class="project" id="project">
+            <div class = "project-contents">
+            <h1 class="project-title">My Projects</h1>
+            <p class="project-subtitle">During my free time, I like to challenge myself with hobby projects. Here
+                are the ones I'm most proud of!</p>
+            <div class="project-select">
+                <div class="project-card" id="unitygame">
+                    <div class="card-header">
+                        <img src="assets/eternal.png" class="cropCircle">
+                        <p class="card-title">Eternal Grid</p>
+                    </div>
+                    <p class="card-text">
+                        A 80s-aesthetic-inspired top-down endless arcade shooter game.
+                        Made in Unity in the C# programming language, all illustrations
+                        and artwork made by me.
+                    </p>
+                    <a href="https://desolaterobot.itch.io/eternal-grid">
+                        <button class="projectButton">
+                            <p>Visit Site</p>
                         </button>
                     </a>
-                    <a href="https://www.linkedin.com/in/dimas-rizky-2113b0275/">
-                        <button class="button1">
-                            <img src="logos/linkedin.png" width="35" height="35">
-                            <p>LinkedIn</p>
+                </div>
+                <div class="project-card" id="substracker">
+                    <div class="card-header">
+                        <img src="assets/substracker.png" class="cropCircle">
+                        <p class="card-title">Substracker</p>
+                    </div>
+                    <p class="card-text">
+                        An Android app that can track subscriptions and daily expenses, made in Flutter in the
+                        Dart
+                        language.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.desolate.substracker">
+                        <button class="projectButton">
+                            <p>Download App</p>
                         </button>
                     </a>
-                    <a href="https://github.com/desolaterobot">
-                        <button class="button1">
-                            <img src="logos/github.png" width="35" height="35">
-                            <p>GitHub</p>
+                </div>
+                <div class="project-card" id="thoth">
+                    <div class="card-header">
+                        <img src="assets/thoth.png" class="cropCircle">
+                        <p class="card-title">ThothCrypt</p>
+                    </div>
+                    <p class="card-text">
+                        A program that allows encryption of entire folders just by using a single password. Made
+                        in
+                        Python, used the TKinter for GUI and Fernet for encryption.
+                    </p>
+                    <a href="https://github.com/desolaterobot/thoth">
+                        <button class="projectButton">
+                            <p>Download On GitHub</p>
                         </button>
                     </a>
                 </div>
             </div>
+            </div>
         </section>
-    </body>
+        <div style="height: 200px; background: linear-gradient(to bottom, #25118000, #066896)"></div>
+    </div>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <div class="contact-contents">
+            <p class="project-title">Contact Me</p>
+            <div class="contact-button-row">
+                <button class="contact-button" onclick="window.location.href = 'mailto:dimasrizkyk@gmail.com';">
+                    <img src="logos/email.png" width="35" height="35">
+                    <p>Email</p>
+                </button>
+                <button class="contact-button"
+                    onclick="window.location.href = 'https://www.linkedin.com/in/dimas-rizky-2113b0275/;'">
+                    <img src="logos/linkedin.png" width="35" height="35">
+                    <p>LinkedIn</p>
+                </button>
+                <button class="contact-button" onclick="window.location.href = 'https://github.com/desolaterobot'">
+                    <img src="logos/github.png" width="35" height="35">
+                    <p>GitHub</p>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>

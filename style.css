@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -8,14 +8,15 @@ html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk';
 }
 
-.navbarTitle{
+/* NAV BAR SECTION ----------------------------------------------------*/
+.navbarTitle {
     color: rgb(183, 255, 251);
     letter-spacing: 2px;
     font-size: 30px;
@@ -28,11 +29,12 @@ html {
     margin-left: 10px;
     transition: .3s;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: rgb(0, 255, 229);
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -45,25 +47,45 @@ html {
     z-index: 100;
 }
 
-.home{
-    height: 93.1vh;
+/* HOME SECTION ----------------------------------------------------*/
+.home {
+    height: 1000px;
     color: white;
     padding: 10% 10%;
     display: flex;
     align-items: center;
 }
 
-.home-contents{
+.home-contents {
     height: 250px;
     display: grid;
     justify-content: space-evenly;
 }
 
-.g1{
-    height: 100px;
-    background: linear-gradient(to bottom, #411f8f, #271f8f)
+.home-bg {
+    height: auto;
+    width: 100%;
+    background-image: url('assets/binary-sun-wallpaper.png');
+    background-size: cover;
+    background-position: center;
 }
 
+.home-title {
+    font-size: 65px;
+    text-shadow: 3px 3px 4px #1b0d5a;
+}
+
+.home-subtitle {
+    font-size: 30px;
+    text-shadow: 3px 3px 4px #1b0d5a;
+}
+
+.home-text {
+    font-size: 30px;
+    text-shadow: 3px 3px 4px #1b0d5a;
+}
+
+/* ABOUT SECTION ----------------------------------------------------*/
 .about {
     display: flex;
     justify-content: space-evenly;
@@ -71,7 +93,7 @@ html {
     padding: 5% 3%;
 }
 
-.about-contents{
+.about-contents {
     height: 500px;
     color: white;
     display: grid;
@@ -79,22 +101,38 @@ html {
     background-color: #251180;
 }
 
-.about-item{
+.about-title {
+    font-size: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.interest-item{
+.about-subtitle {
+    font-size: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.g2{
-    height: 100px;
-    background: linear-gradient(to bottom, #271f8f, #251180)
+.about-text {
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.project{
+.icon {
+    display: block;
+}
+
+/* PROJECTS SECTION ----------------------------------------------------*/
+.project-bg {
+    height: auto;
+    width: auto;
+    background-image: url('assets/mosaic-wallpaper.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.project {
     width: inherit;
     height: 1000px;
     color: white;
@@ -103,18 +141,33 @@ html {
     padding: 0% 10%;
 }
 
-.projectSelect{
+.project-title {
+    text-align: center;
+    padding: 1px;
+    font-size: 40px;
+}
+
+.project-subtitle {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    text-shadow: 3px 3px 4px #000000;
+}
+
+.project-select {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.projectTitle{
+
+.card-header {
     padding-top: 19px;
     display: flex;
     align-items: center;
     justify-content: start;
 }
-.projectBox{
+
+.project-card {
     width: 450px;
     height: 375px;
     padding-left: 20px;
@@ -125,7 +178,19 @@ html {
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.26);
     text-align: center;
 }
-.projectButton{
+
+.card-title {
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.card-text {
+    font-size: 21px;
+    padding-top: 20px;
+    height: 175px;
+}
+
+.projectButton {
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -133,72 +198,319 @@ html {
     padding: 10px 15px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    outline: 1px solid rgb(0, 0, 0); 
+    outline: 1px solid rgb(0, 0, 0);
 }
-.projectButton:hover{
+
+.projectButton:hover {
     background-color: rgb(147, 255, 192);
-    outline: 2px dashed rgb(0, 0, 0); 
+    outline: 2px dashed rgb(0, 0, 0);
 }
-.cropCircle{
+
+.cropCircle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-}.circle-image img {
+}
+
+.circle-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.g3{
-    height: 100px;
-    background: linear-gradient(to bottom, #114a80, #066896)
+@media (min-width: 601px) {
+
+    /* CONTACTS SECTION ----------------------------------------------------*/
+    .contact {
+        height: 250px;
+        width: 100%;
+        color: white;
+        align-items: center;
+        padding: 0% 0%;
+        background-color: #066896;
+    }
+
+    .contact-contents {
+        height: 0px;
+        width: inherit;
+        padding-top: 150px;
+        padding-bottom: 0%;
+        display: flex;
+        align-items: end;
+        justify-content: space-evenly;
+    }
+
+    button {
+        font-size: 40px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .contact-button {
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        padding: 7px 10px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        outline: 2px solid rgb(0, 0, 0);
+    }
+
+    .contact-button:hover {
+        background-color: rgb(147, 255, 192);
+        outline: 2px dashed rgb(0, 0, 0);
+    }
+
+    .contact-button-row {
+        width: 650px;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
-.contact{
-    height: 250px;
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0% 0%;
-    background-color: #066896;
-}
+/* MOBILE SECTION ----------------------------------------------------*/
+@media (max-width: 600px) {
+    .navbarTitle {
+        color: rgb(183, 255, 251);
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
 
-.contact-contents{
-    height: 0px;
-    width: inherit;
-    padding-top: 60px;
-    padding-bottom: 0%;
-    display: flex;
-    align-items: end;
-    justify-content: space-evenly;
-}
+    .navbar a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: x-large;
+        margin-left: 10px;
+        transition: .3s;
+    }
 
-button {
-    font-size: 40px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
-.button1{
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    padding: 7px 10px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    outline: 2px solid rgb(0, 0, 0); 
-}
-.button1:hover{
-    background-color: rgb(147, 255, 192);
-    outline: 2px dashed rgb(0, 0, 0); 
-}
+    .navbar a:hover {
+        color: rgb(0, 255, 229);
+    }
 
-.contact-button-row{
-    width: 650px;
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        background-color: rgb(114, 75, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    .home {
+        height: 310px;
+        color: white;
+        padding: 10% 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-bg {
+        height: 500px;
+        width: auto;
+        background-image: url('assets/binary-sun-wallpaper.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-title {
+        padding-top: 90px;
+        font-size: 40px;
+        text-shadow: 3px 3px 4px #1b0d5a;
+    }
+
+    .home-text {
+        font-size: 20px;
+        text-shadow: 3px 3px 4px #1b0d5a;
+        line-height: 30px;
+        word-spacing: 3px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #251180;
+    }
+
+    .about-contents {
+        height: 500px;
+        color: white;
+        display: grid;
+        align-items: center;
+        background-color: #251180;
+    }
+
+    .about-title {
+        font-size: 25px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .about-subtitle {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .project-bg {
+        height: auto;
+        width: auto;
+        background-image: url('assets/mosaic-wallpaper.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .project {
+        width: inherit;
+        height: 1000px;
+        color: white;
+        display: grid;
+        align-items: center;
+        padding: 0% 0%;
+    }
+
+    .project-title {
+        text-align: center;
+        padding: 1px;
+        font-size: 40px;
+    }
+
+    .project-subtitle {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .project-select {
+        display: flex;
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+        /* Center horizontally */
+        justify-content: center;
+        /* Optional: Center vertically */
+        gap: 10px;
+        /* Optional: adds space between the buttons */
+    }
+
+    .card-header {
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .project-card {
+        width: 340px;
+        height: 250px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: black;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.26);
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 30px;
+        padding-left: 2px;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 15px;
+        height: 90px;
+        padding-top: 0;
+    }
+
+    .projectButton {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        padding: 10px 15px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        outline: 1px solid rgb(0, 0, 0);
+    }
+
+    .projectButton:hover {
+        background-color: rgb(147, 255, 192);
+        outline: 2px dashed rgb(0, 0, 0);
+    }
+
+    .cropCircle {
+        transform: scale(0.6);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    /* CONTACT MOBILE SECTION ------------------------------------*/
+    .contact {
+        width: 100%;
+        align-items: center;
+        padding: 0% 0%;
+        color: white;
+    }
+
+    .contact-contents {
+        background-color: #066896;
+        height: 350px;
+        width: inherit;
+        display: grid;
+        align-items: center;
+    }
+
+    .contact-button-row {
+        display: flex;
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+        /* Center horizontally */
+        justify-content: center;
+        /* Optional: Center vertically */
+        gap: 10px;
+        /* Optional: adds space between the buttons */
+    }
+
+    button {
+        font-size: 40px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .contact-button {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        border-radius: 15px;
+        padding: 7px 10px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        outline: 2px solid rgb(0, 0, 0);
+    }
+
+    .contact-button:hover {
+        background-color: rgb(147, 255, 192);
+        outline: 2px dashed rgb(0, 0, 0);
+    }
 }
