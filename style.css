@@ -277,10 +277,9 @@ html {
     .navbarTitle {
         color: rgb(183, 255, 251);
         letter-spacing: 2px;
-        font-size: 40px;
+        font-size: 30px;
         width: 10px;
     }
-
     .navbar a {
         color: aliceblue;
         text-decoration: none;
@@ -288,11 +287,9 @@ html {
         margin-left: 10px;
         transition: .3s;
     }
-
     .navbar a:hover {
         color: rgb(0, 255, 229);
     }
-
     .header {
         position: fixed;
         height: 60px;
