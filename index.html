@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Dimas Rizky</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Dimas Rizky: Computer Engineering student at NTU Singapore.">
+    <title>Dimas Rizky</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navigation -->
     <header class="header">
         <p class="navbarTitle">DR</p>
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#project">Projects</a>
+            <a href="#projects">Projects</a>
+            <a href="gallery.html">Gallery</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!--home section-->
+    <!-- Home -->
     <div class="home-bg">
         <section class="home" id="home">
             <div class="home-contents">
@@ -32,136 +36,57 @@
                 </p>
             </div>
         </section>
-        <div style="height: 200px; background: linear-gradient(to bottom, #ce111100, #251180)"></div>
+        <div class="home-gradient"></div>
     </div>
 
-    <!--about section-->
+    <!-- About -->
     <section class="about" id="about">
         <div class="about-contents">
             <h1 class="about-title">About Me</h1>
             <div id="education">
-                <h2 class="about-subtitle">
-                    Education
-                </h2>
+                <h2 class="about-subtitle">Education</h2>
                 <p class="about-text">
-                    Completed my O-Levels in 2017, and my A-levels
-                    in 2019. After serving in the Singapore Police Force for
-                    2 years, I currently study in NTU for my Computer Engineering (BE) degree.
+                    Hello! I am a Computer Engineering graduate from Nanyang Technological University. I just finished a fruitful internship as a software engineer at SAP, focusing on the mobile development kit (MDK), and development of AI agents. The semester before that was the happiest semester of my life, spending it in lovely Sweden studying at Chalmers University, while travelling with my dearest friends. I am currently finishing my internship as an AI Engineer at GovTech Singapore.
                 </p>
             </div>
-
-            <div id="interests">
-                <h2 class="about-subtitle">
-                    Interests and Skills
-                </h2>
+            <div id="skills">
+                <h2 class="about-subtitle">Interests</h2>
                 <p class="about-text">
-                    Fuelled by my intrigue of video games when I was a child,
-                    I have always had an interest for programming, so naturally I'd always be motivated to learn new
-                    things about the topic.
-                    <br>
-                    Skills: <u>Python, C#, Javascript, C, Dart, Unity, Flutter</u>
-                </p>
-                <p class="about-text">
-                    I also have experience with creative software for graphic design <u>(Inkscape)</u> and video editing
-                    <u>(Lightworks, Movie Maker)</U>.
-                    <b>Every image in this page is designed by me in Inkscape!</b>
-                </p>
-                <p class="about-text">
-                    My hobbies include cycling and dissociating myself in
-                    movie theatres for 2-3 hours. The longer the better.
+                    Ever since I was young, I have always been interested in technology. New phones, video games, machines, programs... every day, something blows my mind and pushes me to learn further. And that brought me here, now pursuing a career in software engineering and AI. I like to work on software projects in my free time that address my needs - such as a USB encryptor, subscription tracker app, and a secure password manager app!
                 </p>
             </div>
-        </div>
-        <div style="width: 200px;"></div>
-        <div>
-            <img src="assets/eternal.png" height="750" width="750" class="icon">
         </div>
     </section>
 
-    <!--project section-->
+    <!-- Projects -->
     <div class="project-bg">
-        <div style="height: 200px; background: linear-gradient(to bottom, #251180, #25118000)"></div>
-        <section class="project" id="project">
-            <div class = "project-contents">
-            <h1 class="project-title">My Projects</h1>
-            <p class="project-subtitle">During my free time, I like to challenge myself with hobby projects. Here
-                are the ones I'm most proud of!</p>
-            <div class="project-select">
-                <div class="project-card" id="unitygame">
-                    <div class="card-header">
-                        <img src="assets/eternal.png" class="cropCircle">
-                        <p class="card-title">Eternal Grid</p>
-                    </div>
-                    <p class="card-text">
-                        A 80s-aesthetic-inspired top-down endless arcade shooter game.
-                        Made in Unity in the C# programming language, all illustrations
-                        and artwork made by me.
-                    </p>
-                    <a href="https://desolaterobot.itch.io/eternal-grid">
-                        <button class="projectButton">
-                            <p>Visit Site</p>
-                        </button>
-                    </a>
+        <div class="project-gradient-top"></div>
+        <section class="project" id="projects">
+            <div class="project-contents">
+                <h1 class="project-title">My Projects</h1>
+                <p class="project-subtitle">
+                    During my free time, I like to challenge myself with hobby projects. Here
+                    are the ones I'm most proud of!
+                </p>
+                <div class="project-select">
+                    <!-- Cards rendered by js/main.js -->
                 </div>
-                <div class="project-card" id="substracker">
-                    <div class="card-header">
-                        <img src="assets/substracker.png" class="cropCircle">
-                        <p class="card-title">Substracker</p>
-                    </div>
-                    <p class="card-text">
-                        An Android app that can track subscriptions and daily expenses, made in Flutter in the
-                        Dart
-                        language.
-                    </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.desolate.substracker">
-                        <button class="projectButton">
-                            <p>Download App</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="project-card" id="thoth">
-                    <div class="card-header">
-                        <img src="assets/thoth.png" class="cropCircle">
-                        <p class="card-title">ThothCrypt</p>
-                    </div>
-                    <p class="card-text">
-                        A program that allows encryption of entire folders just by using a single password. Made
-                        in
-                        Python, used the TKinter for GUI and Fernet for encryption.
-                    </p>
-                    <a href="https://github.com/desolaterobot/thoth">
-                        <button class="projectButton">
-                            <p>Download On GitHub</p>
-                        </button>
-                    </a>
-                </div>
-            </div>
             </div>
         </section>
-        <div style="height: 200px; background: linear-gradient(to bottom, #25118000, #066896)"></div>
+        <div class="project-gradient-bottom"></div>
     </div>
 
-    <!--contact section-->
+    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="contact-contents">
             <p class="project-title">Contact Me</p>
             <div class="contact-button-row">
-                <button class="contact-button" onclick="window.location.href = 'mailto:dimasrizkyk@gmail.com';">
-                    <img src="logos/email.png" width="35" height="35">
-                    <p>Email</p>
-                </button>
-                <button class="contact-button"
-                    onclick="window.location.href = 'https://www.linkedin.com/in/dimas-rizky-2113b0275/;'">
-                    <img src="logos/linkedin.png" width="35" height="35">
-                    <p>LinkedIn</p>
-                </button>
-                <button class="contact-button" onclick="window.location.href = 'https://github.com/desolaterobot'">
-                    <img src="logos/github.png" width="35" height="35">
-                    <p>GitHub</p>
-                </button>
+                <!-- Buttons rendered by js/main.js -->
             </div>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
