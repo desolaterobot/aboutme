@@ -129,6 +129,30 @@ img {
     text-shadow: 3px 3px 4px #1b0d5a;
 }
 
+.gallery-home-btn {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 20px; /* Space between text and button!! */
+    padding-top: 8px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: var(--font-family);
+    color: white;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-accent);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.gallery-home-btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary-dark);
+    transform: scale(1.05);
+}
+
 .home-gradient {
     height: 200px;
     background: linear-gradient(to bottom, transparent, var(--color-primary-dark));
