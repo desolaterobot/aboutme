@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic papers: Dimas Rizky">
+    <title>Papers: Dimas Rizky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <style>
+        .papers-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .paper-card {
+            background: #0a1a3a;
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .paper-card-context {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #00d4d4;
+            margin: 0 0 0.35rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .paper-card-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #e0e8ff;
+            margin: 0 0 0.75rem 0;
+            line-height: 1.4;
+        }
+
+        .paper-card-description {
+            font-size: 0.95rem;
+            color: #9aabcf;
+            margin: 0;
+            line-height: 1.55;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="gallery-page">
+        <a href="index.html" class="gallery-home-btn gallery-back-btn">&larr; Back</a>
+
+        <h1 class="gallery-title">Academic Papers</h1>
+
+        <div class="papers-container">
+            <a href="https://dr.ntu.edu.sg/entities/publication/7ca394f0-b46c-4cf0-99ea-810059d6498d" target="_blank" rel="noopener noreferrer" class="paper-card">
+                <p class="paper-card-context">Final Year Project</p>
+                <h2 class="paper-card-title">DFCLite: A Lightweight Dynamic Functional Connectivity Model for Federated Learning in fMRI-Based Disease Classification</h2>
+                <p class="paper-card-description">
+                    Machine learning models can be trained on fMRI data to classify brain disorders. However, due to the medical nature of the data, complications such as data privacy, heterogeneity, and scarcity might disrupt training or render centralized machine learning unfeasible. This paper proposes an efficient dynamic functional connectivity model leveraging Graph Neural Networks and 1D-CNNs to capture temporal dependencies, balancing computational efficiency and generalizability for federated learning scenarios.
+                </p>
+            </a>
+            
+            <a href="https://arxiv.org/abs/2505.12206" target="_blank" rel="noopener noreferrer" class="paper-card">
+                <p class="paper-card-context">Exchange Research Project</p>
+                <h2 class="paper-card-title">Road Segmentation for ADAS/AD Applications</h2>
+                <p class="paper-card-description">
+                    Accurate road segmentation is essential for autonomous driving and ADAS, enabling effective navigation in complex environments. This study examines how model architecture and dataset choice affect segmentation by training a modified VGG-16 on the Comma10k dataset and a modified U-Net on the KITTI Road dataset. Both models achieved high accuracy, with cross-dataset testing showing VGG-16 outperforming U-Net despite U-Net being trained for more epochs.
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <script src="js/gallery-data.js"></script>
+</body>
+
+</html>

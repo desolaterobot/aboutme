@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Work experience: Dimas Rizky">
+    <title>Updates: Dimas Rizky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <style>
+        .updates-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0.5rem auto 2rem;
+            padding: 0 1.5rem;
+        }
+
+        .update-card {
+            background: #0a1a3a;
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: block;
+        }
+
+        .update-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .update-card-role {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #00d4d4;
+            margin: 0 0 0.35rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .update-card-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #e0e8ff;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.4;
+        }
+
+        .update-card-duration {
+            font-size: 0.85rem;
+            color: #6b82b0;
+            margin: 0 0 0.75rem 0;
+        }
+
+        .update-card-description {
+            font-size: 0.95rem;
+            color: #9aabcf;
+            margin: 0;
+            line-height: 1.55;
+        }
+
+        .update-card-description ul {
+            margin: 0;
+            padding-left: 1.25rem;
+            list-style: none;
+        }
+
+        .update-card-description li {
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .update-card-description li::before {
+            content: "\2022";
+            color: #00d4d4;
+            font-weight: bold;
+            position: absolute;
+            left: -1.25rem;
+        }
+
+        .update-card-description li:last-child {
+            margin-bottom: 0;
+        }
+
+        .update-card-description strong {
+            color: #c8d4f0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="gallery-page">
+        <a href="index.html" class="gallery-home-btn gallery-back-btn">&larr; Back</a>
+
+        <h1 class="gallery-title">Work Experience</h1>
+        <p class="gallery-subtitle">What I've been up to.</p>
+
+        <div class="updates-container">
+            <div class="update-card">
+                <p class="update-card-role">AI Engineer Intern</p>
+                <h2 class="update-card-title">GovTech Singapore</h2>
+                <p class="update-card-duration">Jan 2026 - Present</p>
+                <div class="update-card-description">
+                    <ul>
+                        <li>Spearheaded stakeholder feedback analysis across government chatbots, identifying <strong>10+ actionable pain points</strong> that informed the product roadmap and drove <strong>data-driven decision-making</strong>.</li>
+                        <li>Engineered a <strong>PDF-to-Markdown conversion pipeline</strong> for RAG systems using lightweight text processing, enabling <strong>self-service knowledge base updates</strong> while keeping time and resource costs minimal.</li>
+                        <li>Optimized LLM responses through advanced <strong>prompt engineering</strong>, boosting <strong>faithfulness scores by 25%</strong> and reducing hallucination rates.</li>
+                        <li>Architected an end-to-end <strong>CI/CD pipeline</strong> using <strong>GitLab Actions</strong> for automated Gitbook-to-RAG document ingestion, enabling <strong>real-time knowledge synchronization</strong> and ensuring chatbots deliver accurate, up-to-date responses.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="update-card">
+                <p class="update-card-role">Full-Stack Software Engineer Intern</p>
+                <h2 class="update-card-title">SAP</h2>
+                <p class="update-card-duration">Jan 2025 - Aug 2025</p>
+                <div class="update-card-description">
+                    <ul>
+                        <li>Delivered cross-platform features for SAP Mobile Development Kit (MDK) using <strong>TypeScript, Java, Kotlin, and Swift</strong>, resolving <strong>50+ JIRA tickets</strong> for multinational enterprise clients.</li>
+                        <li>Diagnosed and resolved complex <strong>native Android and iOS bugs</strong> using Android Studio and Xcode, accelerating release cycles for production deployments.</li>
+                        <li>Mentored <strong>3 interns</strong> within an agile scrum team, fostering a <strong>collaborative learning environment</strong> and improving team velocity.</li>
+                        <li>Spearheaded an MCP server project for MDK app development incorporating <strong>Retrieval-Augmented Generation (RAG)</strong>, <strong>slashing hallucination rates by 80%</strong> and <strong>reducing token usage by 50%</strong>, dramatically accelerating MDK app development workflows.</li>
+                        <li>Engineered <strong>advanced chunking and text-splitting strategies</strong> for nested JSON documents, boosting retrieval precision and delivering <strong>highly relevant context</strong> to LLM responses.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="update-card">
+                <p class="update-card-role">Computer Vision Intern</p>
+                <h2 class="update-card-title">Panasonic R&D</h2>
+                <p class="update-card-duration">May 2024 - Aug 2024</p>
+                <div class="update-card-description">
+                    <ul>
+                        <li>Trained and fine-tuned a <strong>VGG16 deep learning model</strong> achieving <strong>98% pixel accuracy</strong> in road classification, directly supporting autonomous driving R&D initiatives.</li>
+                        <li>Conducted rigorous cross-validation across multiple datasets, uncovering <strong>environmental and annotation inconsistencies</strong> that informed data quality improvements.</li>
+                        <li>Produced <strong>high-quality image segmentation annotations</strong> using GIMP in Linux, contributing training data for production segmentation models.</li>
+                        <li>Authored comprehensive annotation guidelines, <strong>standardizing workflows</strong> and enabling <strong>30% faster onboarding</strong> for future annotators.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="update-card">
+                <p class="update-card-role">Warehouse Assistant</p>
+                <h2 class="update-card-title">DB Schenker</h2>
+                <p class="update-card-duration">Feb 2022 - May 2022 &middot; Part-time</p>
+                <div class="update-card-description">
+                    <ul>
+                        <li>Ad-hoc warehouse assistant, dealing with picking, packing and quality assurance of Apple products for outbound shipments.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="update-card">
+                <p class="update-card-role">Police Officer</p>
+                <h2 class="update-card-title">Singapore Police Force</h2>
+                <p class="update-card-duration">Jul 2020 - Feb 2022 &middot; Full-time</p>
+                <div class="update-card-description">
+                    <ul>
+                        <li>Worked as a ground response officer at Marina Bay NPC during national service. Patrolled and engaged with civilians under pressure and under the public eye to help maintain safety and order at Marina Bay through attending calls, making arrests, and advising members of public.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/gallery-data.js"></script>
+</body>
+
+</html>
